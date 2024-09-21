@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Speech Therapy  - appointment</title>
+  <meta name="title" content="Doclab - home">
+  <meta name="description" content="This is a medical html template made by Nikita">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/ZARA_LOGO.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo" style="font-size: larger;">
+        <img src="./assets/images/ZARA_LOGO_with_Text.png" style=" width: max(5vw,30px);"alt="Zara">
+      </a>
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/ZARA_LOGO_with_Text.png" width="136" height="46" alt="Doclab home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link title-md">Home</a>
+          </li>
+   
+          <li class="navbar-item">
+            <a href="aboutus.html" class="navbar-link title-md">Get help</a>
+          </li>   
+
+          <li class="navbar-item">
+            <a href="service.html" class="navbar-link title-md">Subscription</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="doctors.html" class="navbar-link title-md">Find a Therapist</a>
+          </li>
+
+        
+          <li class="navbar-item">
+            <a href="appointment.html" class="navbar-link title-md" style="background-color: hsl(0, 0%, 100%); border-radius: 6px; color: rgb(0, 0, 0);">Login</a>
+        </li>
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Login - Spoken</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('./assets/images/background.png');
+            background-size: cover;
+        }
+
+        .login-container {
+            background: #fff;
+            padding: 50px;
+            padding-top: 160px; /* Adjust padding to bring the form down */
+            border-radius: 55px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 150%;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .login-container h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"],
+        .login-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+        }
+
+        .login-container .btn {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px; /* Add padding to make the button larger */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: inline-block; /* Ensure button is inline to center it */
+            margin: 20px auto 0; /* Add margin to center */
+        }
+
+        .login-container .btn:hover {
+            background-color: #218838;
+        }
+
+        .toggle-btn {
+            margin-top: 20px;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .toggle-btn:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Login & Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .toggle-btn {
+            margin-top: 10px;
+            color: #007BFF;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Login & Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .toggle-btn {
+            margin-top: 10px;
+            color: #007BFF;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="login-container" id="login-form">
+      <h2>Therapist Login</h2>
+      <form onsubmit="return handleLogin(event);">
+          <input type="text" id="login-username" placeholder="Username" required>
+          <input type="password" id="login-password" placeholder="Password" required>
+          <button type="submit" class="btn">Login</button>
+      </form>
+      <p class="toggle-btn" onclick="toggleForm()">Don't have an account? Sign up</p>
+  </div>
+
+  <div class="login-container" id="signup-form" style="display: none;">
+      <h2>Therapist Sign Up</h2>
+      <form onsubmit="return handleSignup(event);">
+          <input type="text" id="signup-name" placeholder="Name" required>
+          <input type="email" id="signup-email" placeholder="Email" required>
+          <input type="password" id="signup-password" placeholder="Create Password" required>
+          <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+          <button type="submit" class="btn">Sign Up and Pay $10 Initial Fee</button>
+      </form>
+      <p class="toggle-btn" onclick="toggleForm()">Already have an account? Login</p>
+  </div>
+
+  <script>
+      function toggleForm() {
+          const loginForm = document.getElementById('login-form');
+          const signupForm = document.getElementById('signup-form');
+          if (loginForm.style.display === 'none') {
+              loginForm.style.display = 'block';
+              signupForm.style.display = 'none';
+          } else {
+              loginForm.style.display = 'none';
+              signupForm.style.display = 'block';
+          }
+      }
+
+      function handleLogin(event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Fetching login details
+          const username = document.getElementById('login-username').value;
+          const password = document.getElementById('login-password').value;
+
+          // Add logic to check if payment was made before allowing login
+          const paymentMade = localStorage.getItem(username + '_paid'); // Check if user has paid
+
+          if (paymentMade === 'true') {
+              alert('Login successful!');
+              window.location.href = 'dashboard.html'; // Redirect to dashboard after successful login
+          } else {
+              alert('Please make the payment to complete the sign-up process.');
+          }
+
+          return false; // Prevent default form submission
+      }
+
+      function handleSignup(event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Fetching sign-up details
+          const name = document.getElementById('signup-name').value;
+          const email = document.getElementById('signup-email').value;
+          const password = document.getElementById('signup-password').value;
+          const confirmPassword = document.getElementById('confirm-password').value;
+
+          // Password matching validation
+          if (password !== confirmPassword) {
+              alert('Passwords do not match. Please try again.');
+              return false;
+          }
+
+          // Notify user about the payment
+          alert('You need to pay a $10 initial sign-up fee to complete registration.');
+
+          // Store unpaid status in localStorage
+          localStorage.setItem(email + '_paid', 'false'); 
+          
+          // Redirecting to payment page after successful sign-up
+          window.location.href = 'payment.html'; // Redirect to payment page
+          
+          return false; // Prevent default form submission
+      }
+
+      // On the payment page, simulate payment completion (For demonstration purposes)
+      // Once payment is completed:
+      // localStorage.setItem(email + '_paid', 'true');
+  </script>
+
+</body>
+</html>
+
+
+
+</html>
+
+
+      
+      
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+  
+<body>
+
+    <div class="container">
+        <!-- Main content here -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p class="text copyright">
+                &copy; Therapist Hub 2022 | All Rights Reserved by YourTherapyPractice
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

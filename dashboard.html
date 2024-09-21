@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #4A90E2;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        .sidebar h2 {
+            margin: 0 0 20px 0;
+            color: #ffffff;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #357ABD;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            position: relative;
+        }
+        .profile-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .email-list {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .therapist-item {
+            padding: 10px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        button.btn {
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button.btn:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="#my-profile">My Profile</a>
+        <a href="#client-emails">Emails</a>
+        <a href="#edit-profile">Edit Profile</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to Your Dashboard</h1>
+
+        <div class="profile-section" id="my-profile">
+            <h2>Your Profile</h2>
+            <p><strong>Name:</strong> <span id="therapist-name">Nikita</span></p>
+            <p><strong>Email:</strong> jane.doe@example.com</p>
+            <p><strong>Specialization:</strong> Speech Therapy</p>
+            <p><strong>Number of Clients:</strong> 5</p>
+        </div>
+
+        <div class="email-list" id="client-emails">
+            <h2>Client Emails</h2>
+            <p>Would you like to link your email account to view all your emails here?</p>
+            <button class="btn" onclick="openModal()">Link Email</button>
+            <div id="email-list">
+                <!-- Email items will be populated here -->
+            </div>
+        </div>
+
+        <h2>Other Therapists</h2>
+        <div id="therapist-list">
+            <!-- Therapist names and bios will be populated here -->
+        </div>
+    </div>
+
+    <script>
+        // Sample therapists data (this would typically come from a database)
+        const therapists = [
+            { name: "Nikita", bio: "Specializing in early childhood development." },
+            { name: "John Smith", bio: "Expert in behavioral therapy." },
+            { name: "Emily Johnson", bio: "Focusing on speech and language disorders." }
+        ];
+
+        // Load logged-in therapist's name from local storage
+        document.addEventListener('DOMContentLoaded', () => {
+            const therapistName = localStorage.getItem('loggedInTherapist');
+            if (therapistName) {
+                document.getElementById('therapist-name').innerText = therapistName;
+            }
+            displayTherapists();
+        });
+
+        // Display other therapists
+        function displayTherapists() {
+            const therapistList = document.getElementById('therapist-list');
+            therapistList.innerHTML = ''; // Clear previous entries
+
+            therapists.forEach(therapist => {
+                const therapistItem = document.createElement('div');
+                therapistItem.className = 'therapist-item';
+                therapistItem.innerHTML = `<strong>${therapist.name}</strong><p>${therapist.bio}</p>`;
+                therapistList.appendChild(therapistItem);
+            });
+        }
+
+        // Modal functions for linking emails (just a placeholder for functionality)
+        function openModal() {
+            alert('Link your email functionality not implemented.');
+        }
+    </script>
+
+</body>
+</html>
