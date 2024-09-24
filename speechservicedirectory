@@ -1,0 +1,41 @@
+import requests
+from base64 import b64decode
+
+# Function to fetch the content of a specific file from a GitHub repository using the GitHub API
+def fetch_github_file_content(owner, repo, path):
+    # GitHub API URL to fetch the file content
+    url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
+    
+    # Send a GET request to the GitHub API
+    response = requests.get(url)
+    
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Get the JSON response
+        file_content = response.json()
+        
+        # Decode the file content from base64
+        decoded_content = b64decode(file_content['content']).decode('utf-8')
+        
+        return decoded_content
+    else:
+        print(f"Failed to retrieve the file. Status code: {response.status_code}")
+        return None
+
+# Main function to demonstrate the usage
+def main():
+    # GitHub repository and file details
+    owner = "repository-owner"  # replace with the owner of the repository
+    repo = "repository-name"    # replace with the name of the repository
+    path = "path/to/your/file.py"  # replace with the path to the file
+    
+    # Fetch the file content
+    content = fetch_github_file_content(owner, repo, path)
+    
+    # Print the fetched content
+    if content:
+        print(content)
+
+# Run the main function
+if __name__ == "__main__":
+    main()
