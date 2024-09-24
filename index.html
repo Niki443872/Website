@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Speech Therapy  - home</title>
+  <meta name="title" content="Doclab - home">
+  <meta name="description" content="This is a medical html template made by Nikita">
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  <link rel="shortcut icon" href="assets/images/ZARA_LOGO.png" type="image/x-icon">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+
+  <header class="header" data-header style="background-color: rgb(40, 41, 116); padding: 20px;">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+        <a href="#" class="logo" style="font-size: larger;">
+            <img src="./assets/images/ZARA_LOGO_with_Text.png" style="width: max(5vw, 30px);" alt="Speech">
+        </a>
+        <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+                <a href="#" class="logo">
+                    <img src="./assets/images/ZARA_LOGO_with_Text.png" width="136" height="46" alt="Doclab home">
+                </a>
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+            <ul class="navbar-list" style="list-style: none; padding: 0; margin: 0; display: flex;">
+                <li class="navbar-item" style="margin-right: 20px;">
+                    <a href="index.html" class="navbar-link title-md" style="color: rgb(255, 255, 255);">Home</a>
+                </li>
+                <li class="navbar-item" style="margin-right: 20px;">
+                    <a href="aboutus.html" class="navbar-link title-md" style="color: rgb(255, 255, 255);">Get Help</a>
+                </li>
+                <li class="navbar-item" style="margin-right: 20px;">
+                    <a href="service.html" class="navbar-link title-md" style="color: rgb(255, 255, 255);">Subscription</a>
+                </li>
+                <li class="navbar-item" style="margin-right: 20px;">
+                    <a href="doctors.html" class="navbar-link title-md" style="color: rgb(255, 255, 255);">Find a Therapist</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="appointment.html" class="navbar-link title-md" style="background-color: hsl(0, 0%, 100%); border-radius: 6px; color: rgb(0, 0, 0);">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+  <main>
+    <article>
+  
+     <!-- 
+  - #HERO
+-->
+
+<section class="section hero" style="background: linear-gradient(135deg, #279fcf 0%, #dad5d5 100%); background-size: cover; background-position: center;" aria-label="home">
+  <div class="container" style="display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+  
+    <div class="hero-content" style="text-align: center; max-width: 800px;">
+  
+      <p class="hero-welcome" data-reveal="left" style="animation: fadeInUp 1s ease-out; color: #ffffff; font-size: 2.8rem; font-weight: bold; margin-top: 30px;">
+        Welcome to Your Path to Wellness!
+      </p>
+  
+      <h1 class="headline-lg hero-title" data-reveal="left" style="animation: slideInLeft 1.5s ease-out; color: #ffffff; font-size: 3.5rem; font-weight: bold;">
+        Discover the Nearest Therapist
+      </h1>
+  
+      <p class="hero-subtitle has-before" data-reveal="left" style="animation: fadeInUp 2s ease-out; color: #ffffff; font-size: 1.8rem; margin-bottom: 30px;">
+        We're here to help you find the support you need.
+      </p>
+  
+      <div class="hero-card" data-reveal="left" style="animation: fadeInUp 2.5s ease-out; background: rgba(255, 255, 255, 0.85); padding: 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+  
+        <p class="title-lg card-text" style="margin-bottom: 20px; color: #2D3748; font-size: 1.6rem;">
+          Explore Therapists, Psychiatrists, Treatment Centers, and More.
+        </p>
+  
+        <div class="wrapper" style="display: flex; align-items: center; justify-content: center;">
+          <div class="input-wrapper title-lg" style="position: relative; flex-grow: 1; max-width: 400px;">
+            <input type="text" name="location" placeholder="Enter Location" class="input-field" 
+                   style="width: 100%; padding: 12px 15px; border: 2px solid #319795; border-radius: 5px; font-size: 1.2rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <ion-icon name="location" style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); font-size: 1.5rem; color: #319795;"></ion-icon>
+          </div>
+  
+          <button class="btn has-before" style="margin-left: 10px; padding: 12px 20px; background-color: #319795; color: #ffffff; border-radius: 5px; font-size: 1.2rem; border: none; cursor: pointer; transition: background-color 0.3s ease;">
+            <ion-icon name="search" style="margin-right: 5px;"></ion-icon>
+            <span class="span title-md">Find Now</span>
+          </button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .hero-card:hover .btn {
+    background-color: #2C7A7B;
+  }
+
+  .hero-welcome {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #E2E8F0;
+    margin-bottom: 20px;
+    /* Added margin-top to bring the text down */
+    margin-top: 50px;
+  }
+
+  .hero-subtitle {
+    color: #CBD5E0;
+    font-size: 2rem;
+    margin-bottom: 130px;
+  }
+
+  .hero-title {
+    color: #EDF2F7;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 10px 0 20px;
+  }
+
+  .card-text {
+    color: #2D3748;
+    font-size: 1.6rem;
+  }
+
+  .input-field {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+  
+  
+      
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-label="service">
+        <div class="container">
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/message1.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+                <h3 class="headline-sm card-title">
+                  <a href="#">Expert Therapists</a>
+                </h3>
+                <p class="card-text">
+                  Our certified speech-language pathologists have extensive experience and are dedicated to your success.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/Physical Rehabilitation.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+                <h3 class="headline-sm card-title">
+                  <a href="#">Personalized Therapy</a>
+                </h3>
+                <p class="card-text">
+                  We create customized therapy plans to meet the specific needs and goals of each client.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/Acupuncture.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+                <h3 class="headline-sm card-title">
+                  <a href="#">Family-Centered Approach</a>
+                </h3>
+                <p class="card-text">
+                  We involve family members in the therapy process to ensure comprehensive support and progress.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/Aromatherapy.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+                <h3 class="headline-sm card-title">
+                  <a href="#">State-of-the-Art Facilities</a>
+                </h3>
+                <p class="card-text">
+                  Our clinic is equipped with the latest technology and resources to provide the best possible care.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      
+
+
+
+
+
+<!-- 
+  - #ABOUT
+-->
+
+<section class="section about" aria-labelledby="about-label" style="padding: 60px 0;">
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+    
+    <!-- Content Section -->
+    <div class="about-content" style="flex: 1; min-width: 300px; padding-right: 40px; opacity: 0; transform: translateX(-50px); animation: fadeInLeft 1.2s ease-in-out forwards;">
+      <h2 class="headline-md" style="font-size: 5rem; margin-bottom: 20px;">Highly Skilled Professionals</h2>
+      <p class="section-text" style="font-size: 1.8rem; margin-bottom: 20px;">
+        Our skilled speech-language pathologists are dedicated to empowering your voice. With advanced qualifications and a passion for personalized care, they create tailored therapy plans to meet your unique needs. Combining the latest techniques with a compassionate approach, our therapists support you every step of the way. From pediatric and adult therapy to voice and accent modification, our diverse team is here to help you communicate clearly and confidently.
+      </p>
+
+      <div class="wrapper">
+        <ul class="about-list" style="list-style: none; padding: 0; margin: 0;">
+          <li class="about-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+            <ion-icon name="checkmark-circle-outline" style="font-size: 1.5rem; color: #31c6e7; margin-right: 10px;"></ion-icon>
+            <span class="span" style="font-size: 1.8rem;">Certified and Licensed</span>
+          </li>
+          <li class="about-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+            <ion-icon name="checkmark-circle-outline" style="font-size: 1.5rem; color: #31c6e7; margin-right: 10px;"></ion-icon>
+            <span class="span" style="font-size: 1.8rem;">Years of Clinical Experience</span>
+          </li>
+          <li class="about-item" style="display: flex; align-items: center; margin-bottom: 10px;">
+            <ion-icon name="checkmark-circle-outline" style="font-size: 1.5rem; color: #31c6e7; margin-right: 10px;"></ion-icon>
+            <span class="span" style="font-size: 1.8rem;">Expertise in Specialized Techniques</span>
+          </li>
+          <li class="about-item" style="display: flex; align-items: center;">
+            <ion-icon name="checkmark-circle-outline" style="font-size: 1.5rem; color: #31c6e7; margin-right: 10px;"></ion-icon>
+            <span class="span" style="font-size: 1.8rem;">Compassionate and Empathetic Care</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <figure class="about-banner" style="flex: 0 0 300px; margin: 0 0 0 auto; text-align: right; opacity: 0; transform: translateX(50px); animation: fadeInRight 1.2s ease-in-out forwards;">
+      <img src="./assets/images/about-banner.png" alt="about therapists banner" style="width: 350px; height: auto; display: block;">
+    </figure>
+  </div>
+</section>
+
+<!-- CSS Animations -->
+<style>
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .about-content, .about-banner {
+    opacity: 0;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+  }
+
+  .about-content {
+    animation-name: fadeInLeft;
+  }
+
+  .about-banner {
+    animation-name: fadeInRight;
+  }
+</style>
+
+
+<!-- 
+  - #LISTING
+-->
+
+<section class="section listing" aria-labelledby="listing-label">
+  <div class="container">
+    <ul class="grid-list">
+      <li>
+        <h2 class="headline-md" data-reveal="left">Explore Our Therapists</h2>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Pediatric Speech Therapy</h3>
+            <p class="card-text">Early intervention for children facing speech and language delays, articulation disorders, and more. We focus on developing essential communication skills in a supportive and engaging environment.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Adult Speech Therapy</h3>
+            <p class="card-text">Support for adults dealing with speech and language disorders caused by stroke, brain injury, or other conditions. Our therapy aims to restore communication abilities and improve quality of life.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Voice Therapy</h3>
+            <p class="card-text">Treatment for voice disorders such as hoarseness, vocal nodules, and strain. We help you strengthen and refine your voice for clearer and more confident speaking.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Fluency Therapy</h3>
+            <p class="card-text">Assistance for individuals who stutter or have other fluency disorders. Our goal is to enhance speech fluency and ease, making communication smoother and more natural.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Accent Modification</h3>
+            <p class="card-text">Programs designed to help individuals modify their accents for clearer and more effective communication. Ideal for those seeking to enhance their professional or personal interactions.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Teletherapy</h3>
+            <p class="card-text">Convenient online therapy sessions for clients who prefer or require remote services. Enjoy the flexibility of receiving high-quality therapy from the comfort of your home.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Occupational Therapy</h3>
+            <p class="card-text">Personalized interventions to help individuals develop, recover, or maintain daily living skills. Our occupational therapists focus on enhancing the quality of life by enabling clients to participate in meaningful activities.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Physical Therapy</h3>
+            <p class="card-text">Rehabilitation services aimed at improving mobility and quality of life for individuals recovering from injury, surgery, or chronic pain. Our therapists utilize targeted exercises and techniques to restore function.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Cognitive Behavioral Therapy (CBT)</h3>
+            <p class="card-text">A structured, time-limited therapy that focuses on changing negative thought patterns and behaviors. CBT is effective for anxiety, depression, and various mental health issues.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Art Therapy</h3>
+            <p class="card-text">Utilizes creative expression to help individuals process emotions and experiences. Art therapy can be beneficial for people of all ages, enhancing well-being and self-discovery.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Music Therapy</h3>
+            <p class="card-text">Engaging in musical activities to address emotional, cognitive, and social needs. Music therapy can be an effective tool for healing and communication across various populations.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Family Therapy</h3>
+            <p class="card-text">Aims to improve communication and resolve conflicts within families. This therapy addresses issues affecting the family unit as a whole, promoting healthier relationships.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Group Therapy</h3>
+            <p class="card-text">Facilitated sessions with a small group of individuals experiencing similar issues. Group therapy provides support, perspective, and shared experiences to aid in healing and growth.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Play Therapy</h3>
+            <p class="card-text">A therapeutic approach for children that uses play to help them express feelings, communicate, and learn problem-solving skills. It is an effective way to address emotional and behavioral challenges.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Hypnotherapy</h3>
+            <p class="card-text">A guided relaxation technique that uses focused attention and suggestion to promote positive changes in behavior and emotional well-being. Hypnotherapy can help with anxiety, stress, and habit control.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Mindfulness-Based Therapy</h3>
+            <p class="card-text">Combines mindfulness practices with traditional therapeutic approaches to enhance emotional regulation and awareness. This therapy is effective for reducing stress and improving mental health.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Behavioral Therapy</h3>
+            <p class="card-text">Focuses on changing maladaptive behaviors through reinforcement strategies. Effective for individuals with anxiety, depression, and behavioral disorders, it emphasizes skill development and coping strategies.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="listing-card" data-reveal="bottom">
+          <div class="card-icon"></div>
+          <div>
+            <h3 class="headline-sm card-title">Narrative Therapy</h3>
+            <p class="card-text">A therapeutic approach that encourages individuals to tell their stories and reframe their experiences. This method helps clients separate themselves from their problems and view their life narratives positively.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+      
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-labelledby="blog-label">
+        <div class="container">
+          <h2 class="section-title headline-md text-center" data-reveal="bottom">Latest Articles</h2>
+          <ul class="grid-list">
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+                <div class="meta-wrapper">
+                  <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="span">By Therapist</span>
+                  </div>
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+                    <span class="span">Health Tips</span>
+                  </div>
+                </div>
+                <h3 class="headline-sm card-title">The Importance of Self-Care for Therapists</h3>
+                <time class="title-sm date" datetime="09-02-2024">09-02-2024</time>
+                <p class="card-text">Exploring strategies for maintaining physical and emotional well-being while providing quality care to clients.</p>
+                <a href="#" class="btn-text title-lg">Read More</a>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+                <div class="meta-wrapper">
+                  <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="span">By Therapist</span>
+                  </div>
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+                    <span class="span">Wellness Tips</span>
+                  </div>
+                </div>
+                <h3 class="headline-sm card-title">Mindfulness Techniques for Therapists</h3>
+                <time class="title-sm date" datetime="09-02-2024">09-02-2024</time>
+                <p class="card-text">Exploring mindfulness practices to enhance focus, reduce stress, and improve client interactions.</p>
+                <a href="#" class="btn-text title-lg">Read More</a>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card has-before has-after" data-reveal="bottom">
+                <div class="meta-wrapper">
+                  <div class="card-meta">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="span">By Therapist</span>
+                  </div>
+                  <div class="card-meta">
+                    <ion-icon name="folder-outline"></ion-icon>
+                    <span class="span">Prof-Dev</span>
+                  </div>
+                </div>
+                <h3 class="headline-sm card-title">Navigating Boundaries in Therapeutic Relationships</h3>
+                <time class="title-sm date" datetime="2024-02-09">09-02-2024</time>
+                <p class="card-text">Exploring ethical considerations and practical strategies for establishing and maintaining boundaries with clients.</p>
+                <a href="#" class="btn-text title-lg">Read More</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p class="text copyright">
+                &copy; Therapist Hub 2022 | All Rights Reserved by YourTherapyPractice
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

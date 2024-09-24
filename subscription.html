@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: rgb(40, 41, 116); /* Header background */
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: max(5vw, 30px);
+        }
+
+        .navbar-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar-item {
+            margin-right: 30px; /* Increased space between items */
+        }
+
+        .navbar-link {
+            color: rgb(255, 255, 255); /* White text for links */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.2rem; /* Increase font size */
+        }
+
+        .navbar-link:hover {
+            text-decoration: underline; /* Optional: Add hover effect */
+        }
+
+        .login-button {
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 6px;
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header" data-header>
+    <div class="container">
+        <a href="#" class="logo" style="font-size: larger;">
+            <img src="./assets/images/ZARA_LOGO_with_Text.png" alt="Speech Logo">
+        </a>
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link title-md">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="aboutus.html" class="navbar-link title-md">Get Help</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="service.html" class="navbar-link title-md">Subscription</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="doctors.html" class="navbar-link title-md">Find a Therapist</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="appointment.html" class="navbar-link title-md login-button">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+</body>
+</html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .progress-bar .step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .progress-bar .step::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -50%;
+            width: 100%;
+            height: 4px;
+            background-color: lightgray;
+            z-index: -1;
+        }
+
+        .progress-bar .step:last-child::before {
+            display: none;
+        }
+
+        .progress-bar .step.active {
+            color: #FFD700;
+        }
+
+        /* Form Steps */
+        .form-step {
+            display: none;
+            padding: 20px;
+        }
+
+        .form-step.active {
+            display: block;
+        }
+
+        .form-step h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-step label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-step input, .form-step select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-step button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-step button.prev-step {
+            background-color: #6c757d;
+        }
+
+        .form-step button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar">
+        <div class="step active">Get Started</div>
+        <div class="step">Name & Location</div>
+        <div class="step">Credentials</div>
+        <div class="step">Billing Info</div>
+        <div class="step">Payment</div>
+        <div class="step">Welcome</div>
+    </div>
+    
+    <form id="subscription-form">
+        <!-- Step 1: Get Started -->
+        <div class="form-step active">
+            <h2>Get Started</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <!-- Add more countries as needed -->
+            </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="role" required>
+            <button type="button" class="next-step">Next</button>
+        </div>
+    
+        <!-- Step 2: Name & Location -->
+        <div class="form-step">
+            <h2>Name & Location</h2>
+            <label for="title">Title:</label>
+            <select id="title" name="title" required>
+                <option value="Dr.">Dr.</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="middle-name">Middle Name:</label>
+            <input type="text" id="middle-name" name="middle-name">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <label for="credentials">Credentials:</label>
+            <input type="text" id="credentials" name="credentials" required>
+            <label for="street-address">Street Address:</label>
+            <input type="text" id="street-address" name="street-address" required>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+            <label for="zip-code">ZIP Code:</label>
+            <input type="text" id="zip-code" name="zip-code" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="button" class="prev-step">Previous</button>
+            <button type="button" class="next-step">Next</button>
+        </div>
+    
+        <!-- Step 3: Credentials -->
+        <div class="form-step">
+            <h2>Credentials</h2>
+            <label for="credentials-detail">Enter your credentials:</label>
+            <input type="text" id="credentials-detail" name="credentials-detail" required>
+            <!-- Add more fields as needed -->
+            <button type="button" class="prev-step">Previous</button>
+            <button type="button" class="next-step">Next</button>
+        </div>
+    
+        <!-- Step 4: Billing Info -->
+        <div class="form-step">
+            <h2>Billing Info</h2>
+            <p>Please select your subscription plan:</p>
+            <select id="subscription-plan" name="subscription-plan" required>
+                <option value="15">Basic Subscription Plan: $15 / Month</option>
+                <option value="25">Premium Subscription Plan: $25 / Month</option>
+                <option value="45">Elite Subscription Plan: $45 / Month</option>
+            </select>
+            <p>Initial Sign-Up Fee: $10</p>
+            <button type="button" class="prev-step">Previous</button>
+            <button type="button" class="next-step">Next</button>
+        </div>
+    
+        <!-- Step 5: Payment -->
+        <div class="form-step">
+            <h2>Payment</h2>
+            <p>You have selected the <span id="selected-plan">Basic</span> plan for <span id="plan-price">$15</span> / Month.</p>
+            <button id="pay-now" class="btn">Pay Now</button>
+            <button type="button" class="prev-step">Previous</button>
+        </div>
+    
+        <!-- Step 6: Welcome -->
+        <div class="form-step">
+            <h2>Welcome</h2>
+            <p>Thank you for subscribing!</p>
+            <button type="submit">Finish</button>
+        </div>
+    </form>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const steps = document.querySelectorAll(".form-step");
+            const nextButtons = document.querySelectorAll(".next-step");
+            const prevButtons = document.querySelectorAll(".prev-step");
+            const progressBarSteps = document.querySelectorAll(".progress-bar .step");
+            let currentStep = 0;
+    
+            function showStep(stepIndex) {
+                steps.forEach((step, index) => {
+                    step.classList.toggle("active", index === stepIndex);
+                    progressBarSteps[index].classList.toggle("active", index <= stepIndex);
+                });
+            }
+    
+            nextButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    if (currentStep < steps.length - 1) {
+                        currentStep++;
+                        showStep(currentStep);
+                        if (currentStep === 3) { // Billing Info step
+                            const planSelect = document.getElementById('subscription-plan');
+                            const selectedOption = planSelect.options[planSelect.selectedIndex];
+                            document.getElementById('selected-plan').innerText = selectedOption.text.split(':')[0].trim();
+                            document.getElementById('plan-price').innerText = `$${selectedOption.value}`;
+                        }
+                    }
+                });
+            });
+    
+            prevButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    if (currentStep > 0) {
+                        currentStep--;
+                        showStep(currentStep);
+                    }
+                });
+            });
+    
+            document.getElementById('pay-now').addEventListener('click', function() {
+                window.location.href = 'payment.html'; // Redirect to payment page
+            });
+    
+            showStep(currentStep);
+        });
+    </script>
+    
+    </body>
+    
+</html>
+
+ <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p class="text copyright">
+                &copy; Therapist Hub 2022 | All Rights Reserved by YourTherapyPractice
+            </p>
+        </div>
+    </div>
+</footer>
